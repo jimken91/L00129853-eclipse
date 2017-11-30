@@ -1,6 +1,7 @@
 package ie.lyit.hotel;
 
 // INHERITANCE - Employee IS-A Person, and CAN-DO Payable methods
+@SuppressWarnings("serial")
 public class Employee extends Person implements Payable {
     private Date dob;		// Employee has name,address&phoneNumber from Person
     private Date startDate;	// AND dob,startdate,salary, & number	

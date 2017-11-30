@@ -59,6 +59,7 @@ public class DateTester{
 		setDayTo=15;setMonthTo=33;setYearTo=2017;
 		do {
 			try {
+				@SuppressWarnings("unused")
 				Date myDate2 = new Date(setDayTo,setMonthTo,setYearTo);
 			}
 			catch(IllegalArgumentException iEA){
@@ -72,6 +73,7 @@ public class DateTester{
 				setYearTo = keyboard.nextInt();				
 			}
 		}while(!goodInput);
+		keyboard.close();
    }
 }
 
